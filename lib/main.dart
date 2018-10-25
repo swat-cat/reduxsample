@@ -15,19 +15,19 @@ void main() async{
     DeviceOrientation.portraitUp,
   ]);
   var store = await createStore();
-  runApp(new SlayWokeApp(store));
+  runApp(new App(store));
 }
 
-class SlayWokeApp extends StatefulWidget {
+class App extends StatefulWidget {
   final Store<AppState> store;
 
-  SlayWokeApp(this.store);
+  App(this.store);
 
   @override
-  _SlayWokeAppState createState() => _SlayWokeAppState();
+  _AppState createState() => _AppState();
 }
 
-class _SlayWokeAppState extends State<SlayWokeApp> {
+class _AppState extends State<App> {
   @override
   Widget build(BuildContext context) {
     return new  StoreProvider<AppState>(

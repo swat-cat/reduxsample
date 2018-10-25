@@ -13,6 +13,7 @@ class LoginViewModel{
   final String passwordError;
   final String email;
   final String emailError;
+
   final Function(String) validateEmail;
   final Function(String) validatePassword;
   final Function(String email, String password) login;

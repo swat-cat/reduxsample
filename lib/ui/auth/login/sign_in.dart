@@ -69,6 +69,7 @@ class _SignInState extends State<SignIn> with SingleTickerProviderStateMixin{
                     }
                 ));
               },
+            
               converter: (store) => LoginViewModel.fromStore(store),
               builder: (_, viewModel) => content(viewModel,constraints),
           ),
